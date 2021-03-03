@@ -85,7 +85,7 @@ body, html{
     margin-top: 70px;
     position:relative;
     height: 80vh;
-    background: url('../img/bgg.jpg');
+    background: url('bgg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@ body, html{
     position: relative;
     width: 100%;
     height: 85vh;
-    background: url('../img/bg_about_white.jpg');
+    background: url('bg_about_white.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -216,7 +216,7 @@ body, html{
     top: 30%;
     width: 100%;
     height: 60vh;
-    background: url('../img/about_clinic_info.jpg');
+    background: url('about_clinic_info.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -263,7 +263,7 @@ body, html{
 #th-img{
     position: relative;
     height: 85vh;
-    background: url('../img/call-2.jpg');
+    background: url('call-2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
