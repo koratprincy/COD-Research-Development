@@ -1,0 +1,975 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: #fff0f0;
+    font-family: 'Roboto',sans-serif;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;  
+}
+.banner .navbar{
+    padding: 0px 20px;
+    position: relative;
+    width: 100%;
+    height: 2.6rem;
+    background-color: #0043a7;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .left-nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.navbar .left-nav li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0px 10px;
+    font-size: 0.8rem;
+}
+.navbar .right-nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.navbar .right-nav li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0px 10px;
+    font-size: 0.8rem;
+}
+.border-left {
+    border-right: 2px solid aliceblue;
+}
+.banner .main_navbar{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    padding: 25px 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 5.4rem;
+    background-color: aliceblue;
+}
+.main_navbar ul{
+    width: 100%;
+    height: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main_navbar ul li a{
+    padding: 5px 18px;
+    text-decoration: none;
+    color: #0043a7;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.banner .background{
+    width: 100%;
+    margin-top: 70px;
+    position:relative;
+    height: 80vh;
+    background: url('../img/bgg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner .background .main_lines{
+    position: absolute;
+    right: 0;
+    width: 600px;
+    top: 45%;
+    padding: 20px 0px 20px 70px;
+    background-color: #0043a796;
+    border-top-left-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+    
+}
+.banner .background .main_lines h1{
+    color: aliceblue;
+    font-size: 2.75rem;
+    font-weight: 600;
+    width: 90%;
+}
+
+
+
+
+/*-----seond div------------------------*/
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .about_bg{
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background: url('../img/bg_about_white.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.banner .about_bg .info {
+    width: 550px;
+    height: 500px;
+    padding: 45px 50px;
+    background-color: #f0f8ff;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.banner .about_bg .info h1{
+    color: #646464;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+#change-color{
+    color: #0043a7;
+}
+.banner .about_bg .info p{
+    color: #646464;
+    font-size: 0.8rem;
+    margin: 10px auto;
+}
+.banner .about_bg .info h4{
+    color: #0043a7;
+    font-size: 1.1rem;
+    margin: 10px auto;
+}
+.banner .about_bg .info a{
+    text-decoration: none;
+    color: #0043a7;
+    font-size: 0.95rem;
+}
+.banner .about_bg .info a i{
+    padding-left: 8px;
+}
+
+/*----- Third div------------------------*/
+
+#main-div {
+    position: relative;
+    height: 135vh;
+}
+.facility{
+    position: absolute;
+    top: 3%;
+    right: 0;
+    width: 75%;
+    height: 200px;
+    background: #acacacda;
+    border-top-left-radius: 7.5rem;
+    border-bottom-left-radius: 7.5rem;
+    padding: 20px 0px;
+    
+}
+.facility ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 100%;
+}
+.facility li{
+    padding: 25px 35px;
+    border-left: 2px solid #0043a7;  
+}
+#border-none{
+    border-left: #646464;
+}
+.facility li h1{
+    color: #0043a7;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.facility li #bold{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.facility li p{
+    font-size: 1rem;
+}
+.about_clinic{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    height: 60vh;
+    background: url('../img/about_clinic_info.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main_clinic_info {
+    right: 0px;
+    top: 40%;
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    padding: 50px 55px;
+    color: #f0f8ff;
+    background-color: #0148b3d7;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.main_clinic_info h1{
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.main_clinic_info p{
+    font-size: 0.9rem;
+    margin: 10px auto;
+}
+.main_clinic_info h4{
+    font-size: 1rem;
+    margin: 15px auto;
+}
+.main_clinic_info h1 span{
+    color: #000;
+}
+.main_clinic_info a{
+    text-decoration: none;
+    color: #f0f8ff;
+    font-size: 0.95rem;
+}
+.main_clinic_info a i{
+    padding-left: 8px;
+}
+
+
+/*-----Fourth Div---------------------------*/
+
+#th-img{
+    position: relative;
+    height: 85vh;
+    background: url('../img/call-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ .banner .support_page{
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    width: 500px;
+    height: 500px;
+    padding: 40px;
+    color: #5e5e5e;
+    background-color: #f0f8ffbd;
+    border-radius: 40px;
+ }
+.support_page h1{
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.support_page #support_color{
+    color: #0043a7;
+}
+.support_page p{
+    font-size: 0.9rem;
+    margin: 10px auto;
+}
+.support_page a{
+    text-decoration: none;
+    color: #5e5e5e;
+    font-size: 0.95rem;
+}
+.support_page a i{
+    padding-left: 8px;
+}
+
+
+/*-----Fifth Div---------------------------*/
+.banner .div-1{
+    height: 40vh;
+}
+.banner .div-2{
+    height: 60vh;
+    background-color: #0043a74d;
+}
+.banner .clinic_video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 800px;
+    height: 480px;
+}
+.clinic_video video{
+    outline: none;
+    width: 700px;
+    display: block;
+    margin: auto;
+    height: 395px;
+    box-shadow: 2px 2px 35px 12px #00000079;
+}
+.clinic_video .tag{
+    width: 100%;
+    height: 75px;
+    background-color: #0043a7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 35px 12px #00000079;
+}
+.clinic_video .tag h1{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f0f8ff;
+} 
+
+/*----- Sixth Div--------------------------*/
+
+#cards{
+    height: 80vh;
+    position: relative;
+    padding: 50px 100px;
+}
+#cards h1{
+    text-align: left;
+    font-size: 2rem;
+    color: #0043a7;
+    margin-bottom: 45px;
+}
+#cards .cards{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cards .cards .card{
+    height: 100%;
+    width: 350px;
+}
+#cards .cards .card img{
+    width: 100%;
+    height: 240px;
+}
+#cards .cards .card h2{
+    color: #5e5e5e;
+    font-size: 1.4rem;
+    margin: 15px auto;
+}
+#cards .cards .card hr{
+    height: 3px;
+    background-color: #0043a7;
+}
+#cards .cards .card p{
+    font-size: 0.9rem;
+    color: #5e5e5e;
+    margin: 20px auto;
+}
+
+
+
+/*-----Footer-----------------------------*/
+.footer {
+    width: 100%;
+    height: 41vh;
+}
+.footer .blue-footer{
+    width: 100%;
+    height: 8rem;
+    padding: 10px 160px 10px 60px;
+    background-color: #0043a7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .blue-footer i{
+    font-size: 4rem;
+    color: #f0f8ff;
+}
+.footer .blue-footer h1{
+    color: #f0f8ff;
+    text-transform: uppercase;
+}
+.blue-footer .email input{
+    padding: 8px 20px;
+    background-color: aliceblue;
+    border: none;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.blue-footer .email input::placeholder{
+    color: #0043a7;
+    font-size: 0.8rem;
+}
+.blue-footer .email{
+    display: flex;
+    align-items: center;
+}
+.blue-footer .email a{
+    padding: 7px 20px;
+    background-color: #3f649b;
+    color: #f0f8ff;
+    text-decoration: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.footer .light_blue-footer{
+    width: 100%;
+    height: 8rem;
+    padding: 10px 180px 10px 10px;
+    background-color:aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+.footer .light_blue-footer .logo{
+    display: flex;
+    padding: 30px 0px;
+    height: inherit;
+    justify-content: flex-start;
+}
+.logo img{
+    width: 100px;
+    height: 90px;
+}
+.logo i{
+    color: #0043a7;
+    margin: 0px 5px;
+}
+.logo p{
+    color: #0043a7;
+    margin: 0px 5px;
+}
+.address-USA{
+    padding: 30px 0px;
+}
+.address-location{
+    display: flex;
+}
+.address-location i{
+    color: #0043a7;
+    margin: 0px 5px;
+}
+.address-location p{
+    color: #0043a7;
+    margin: 0px 5px;
+}
+.address-US{
+    color: #0043a7;
+    margin: 0px 25px;
+}
+.contact-US{
+    padding: 30px 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.contact-US i{
+    color: #0043a7;
+    margin: 0px 5px;
+}
+.contact-US p{
+    color: #0043a7;
+    margin: 0px 5px;
+}
+.footer .dark-footer{
+    padding: 0px 280px 0px 60px;
+    width: 100%;
+    height: 2.25rem;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dark-footer p{
+    color: #f0f8ff;
+    font-size: 0.9rem;
+}
+
+/*------ Responsible Design------------------------------------*/
+
+@media(max-width:1300px) {
+    #cards{
+    height: 85vh;
+    position: relative;
+    padding: 50px 25px;
+    }
+    #cards .cards .card {
+        height: 100%;
+        width: 300px;
+    }
+    .facility {
+        width: 85%;
+        height: 200px;
+        padding: 15px 0px;
+    }
+    .footer .blue-footer h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media(max-width:1000px) {
+    .main_clinic_info {
+        width: 460px;
+        height: 400px;
+        padding: 35px;
+    }
+    .main_clinic_info h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    .main_clinic_info p {
+        font-size: 0.75rem;
+        margin: 15px auto;
+    }
+    .main_clinic_info h4 {
+        font-size: 0.85rem;
+        margin: 5px auto;
+    }
+    .banner .main_navbar {
+        padding: 25px 15px;
+    }
+    .main_navbar ul li a {
+        padding: 5px 12px;
+        font-size: 0.85rem;
+    }
+    #cards .cards .card h2 {
+        font-size: 1.1rem;
+        margin: 10px auto;
+    }
+    #cards .cards .card p {
+        font-size: 0.8rem;
+    }
+    #cards{
+    height: 85vh;
+    position: relative;
+    padding: 50px 15px;
+    }
+    #cards .cards .card {
+        height: 100%;
+        width: 240px;
+    }
+    .banner .about_bg .info {
+        width: 475px;
+        height: 420px;
+        padding: 35px;
+    }
+    .banner .about_bg .info p {
+        font-size: 0.72rem;
+        margin: 5px auto;
+    }
+    .banner .about_bg .info h4 {
+        font-size: 0.9rem;
+        margin: 5px auto;
+    }
+    .banner .about_bg .info h1 {
+        font-size: 1.35rem;
+    }
+    .banner .background .main_lines {
+        width: 580px;
+        top: 45%;
+        padding: 20px 0px 20px 90px;
+    }
+    .banner .background .main_lines h1 {
+        font-size: 2.4rem;
+    }
+    .banner .support_page {
+        top: 120px;
+        left: 70px;
+        width: 400px;
+        height: 400px;
+        padding: 25px;
+    }
+    .support_page h1 {
+        font-size: 1.4rem;
+    }
+    .support_page p {
+        font-size: 0.75rem;
+        margin: 15px auto;
+    }
+    .footer .blue-footer {
+        width: 100%;
+        height: 8rem;
+        padding: 10px;
+    }
+    .footer .blue-footer i {
+        font-size: 2.5rem;
+    }
+    .facility {
+        width: 95%;
+        height: 165px;
+        padding: 15px 0px;
+    }
+    .facility li #bold {
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-bottom: 2px;
+    }
+    .facility li p {
+        font-size: 0.85rem;
+    }
+    .facility li h1 {
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+    .facility li {
+        padding: 25px;
+    }
+    .footer .blue-footer h1 {
+        font-size: 1.2rem;
+    }
+    .footer .dark-footer {
+        padding: 5px 40px
+    }
+    .footer .dark-footer p{
+        font-size: 0.75rem;
+    }
+    .footer .light_blue-footer {
+        padding: 10px 35px;
+        justify-content: space-between;
+    }
+    .banner .clinic_video {
+        width: 640px;
+        height: 500px;
+    }
+    .clinic_video .tag h1 {
+        font-size: 1.2rem;
+    }
+    #cards h1 {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+    .clinic_video video {
+        outline: none;
+        width: 549px;
+        display: block;
+        margin: auto;
+        height: 309px;
+        box-shadow: 2px 2px 35px 12px #00000079;
+    }
+}
+
+
+@media(max-width:768px){
+    .navbar .left-nav li a {
+        font-size: 0.7rem;
+        padding: 0px 8px;
+    }
+    .navbar .right-nav li a {
+        padding: 0px 8px;
+        font-size: 0.7rem;
+    }
+    .menu {
+        position: fixed;
+        top: -25px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        background: #f0f8ff;
+        width: 100%;
+        height: 105vh!important;
+        transition: 0.5s;
+        z-index: 9999;
+        border-top: 2px solid #0043a7;
+    }
+
+    .menu.active {
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+ 
+    }
+    .menu.active li{
+        margin: 10px 0px;
+    }
+    .menu.active li a{
+        font-size: 1.25rem;
+    }
+    .toggle {
+        margin: -8px 0px;
+        width: 40px;
+        height: 40px;
+        background: url(../img/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+        filter: invert(1);
+        z-index: 9999999999;
+    }
+
+    .toggle.active {
+        position: fixed;
+        background: url(../img/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        cursor: pointer;
+        filter: invert(1);
+        z-index: 9999999999;
+    }
+    .banner .background .main_lines {
+        width: 440px;
+        padding: 20px 0px 20px 70px;
+    }
+    .banner .background .main_lines h1{
+        font-size: 1.85rem;
+    }
+    .banner .about_bg {
+        justify-content: center;
+    }
+    .banner .support_page {
+        left: 45px;
+    }
+    #th-img {
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner .about_bg .info {
+        width: 475px;
+        height: 425px;
+        padding: 35px;
+        border-radius: 45px;
+        background: #f0f8ffcc;
+    }
+    .facility {
+        border-radius: 0px;
+        width: 100%;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .facility li {
+        padding: 15px;
+    }
+    .facility li h1{
+        font-size: 1.4rem;
+    }
+    .facility li p {
+        font-size: 0.70rem;
+    }
+    .banner .div-2 {
+        height: 47vh;
+    }
+    .banner .clinic_video {
+        width: 480px;
+        height: 360px;
+    }
+    .clinic_video video {
+        width: 420px;
+        height: 237px;  
+    }
+    .clinic_video .tag h1 {
+        font-size: 1rem;
+    }
+    #cards h1 {
+        font-size: 1.5rem;
+        display: block;
+        margin:  40px auto;
+        text-align: center;
+    }
+    #cards .cards {
+        width: 100%;
+        height: 50vh;
+        justify-content: space-around;
+    }
+    #card-3{
+        display: none;
+    }
+    #cards .cards .card img {
+        width: 100%;
+        height: 200px;
+    }
+    #cards .cards .card {
+        height: 100%;
+        width: 230px;
+    }
+    #cards .cards .card h2 {
+        font-size: 1rem;
+    }
+    #cards .cards .card p {
+        font-size: 0.75rem;
+    }
+    .footer .blue-footer {
+        padding: 10px 60px;
+    }
+    .footer .blue-footer h1 {
+        display: none;
+    }
+    .address-USA {
+        padding: 10px 0px;
+    }
+    .contact-US {
+        padding: 10px 10px;
+    }
+    .footer .light_blue-footer .logo {
+        padding: 10px 0px;
+    }
+    .contact-US p {
+        font-size: 0.8rem;
+    }
+    .logo p {
+        font-size: 0.8rem;
+    }
+    .address-location p {
+        font-size: 0.8rem;
+    }
+    .address-US p{
+        font-size: 0.7rem;
+    }
+    .footer .dark-footer p {
+        font-size: 0.6rem;
+    }
+}
+
+
+@media(max-width:500px){
+    .navbar .left-nav li a {
+        font-size: 0.5rem;
+        padding: 0px 6px;
+    }
+    .navbar .right-nav li a {
+        padding: 0px 6px;
+        font-size: 0.5rem;
+    }
+    .banner .background .main_lines {
+        width: 360px;
+        padding: 20px 0px 20px 50px;
+    }
+    .banner .background .main_lines h1{
+        font-size: 1.35rem;
+    }
+    .banner .about_bg .info {
+        width: 375px;
+        height: 420px;
+        padding: 25px;
+        border-radius: 40px;
+    }
+    .banner .about_bg .info p {
+        font-size: 0.65rem;
+        margin: 10px auto;
+    }
+    .facility ul {
+        height: 75%;
+    }
+    .facility li {
+        padding: 10px;
+        height: 100%;
+    }
+    .main_clinic_info {
+        width: 375px;
+        height: 400px;
+        padding: 25px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    #main-div {
+        position: relative;
+        height: 130vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main_clinic_info h1 {
+        font-size: 1.35rem;
+    }
+    .main_clinic_info p {
+        font-size: 0.7rem;
+    }
+    .main_clinic_info h4 {
+        font-size: 0.7rem;
+        margin: 10px auto;
+    }
+    .banner .support_page {
+        top: 80px;
+        left: 20px;
+        width: 375px;
+        height: 420px;
+        padding: 25px;
+    }
+    #video-div {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+    }
+    #video_div{
+        height: 85vh;
+    }
+    .banner .clinic_video {
+        width: 400px;
+        height: 300px;
+    }
+    .clinic_video video {
+        width: 335px;
+        height: 190px;
+    }
+    .clinic_video .tag h1 {
+        font-size: 0.85rem;
+    }
+    .banner .div-2 {
+        height: 35vh;
+    }
+    #cards h1 {
+        font-size: 1.25rem;
+        display: block;
+        margin: 25px auto;
+        text-align: center;
+    }
+    #cards {
+        height: 65vh;
+        padding: 35px 5px;
+    }
+    #cards .cards .card {
+        width: 195px;
+    }
+    #cards .cards {
+        height: 42vh;
+    }
+    #cards .cards .card img {
+        height: 140px;
+    }
+    #cards .cards .card h2 {
+        font-size: 0.75rem;
+    }
+    #cards .cards .card p {
+        font-size: 0.6rem;
+        max-width: 8px auto;
+    }
+    .footer .blue-footer {
+        padding: 10px 15px;
+    }
+    .footer .light_blue-footer {
+        padding: 10px 5px;
+        height: 40%;
+    }
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+/*----- Thank You :) ------------------------------------------*/
